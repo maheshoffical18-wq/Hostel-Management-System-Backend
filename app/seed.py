@@ -7,60 +7,60 @@ Base.metadata.create_all(bind=engine)
 db = SessionLocal()
 
 # Prevent duplicate seed data
-if db.query(Student).count() == 0:
+# if db.query(Student).count() == 0:
 
-    students = [
-        Student(
-            name="Maheshwaran S",
-            register="C4S22184",
-            department="BCA",
-            year="3rd Year",
-            room="18",
-            phone="7708043539"
-        ),
-        Student(
-            name="Arun Kumar",
-            register="C4S22101",
-            department="BCA",
-            year="2nd Year",
-            room="12",
-            phone="9876543210"
-        ),
-        Student(
-            name="Priya S",
-            register="C4S22115",
-            department="BSc CS",
-            year="3rd Year",
-            room="21",
-            phone="9876501234"
-        ),
-        Student(
-            name="Karthik R",
-            register="C4S22120",
-            department="BCA",
-            year="1st Year",
-            room="15",
-            phone="9123456789"
-        ),
-        Student(
-            name="Divya M",
-            register="C4S22125",
-            department="BCom",
-            year="2nd Year",
-            room="10",
-            phone="9000001234"
-        ),
-        Student(
-            name="Sanjay P",
-            register="C4S22130",
-            department="BCA",
-            year="3rd Year",
-            room="25",
-            phone="9888888888"
-        ),
-    ]
+#     students = [
+#         Student(
+#             name="Maheshwaran S",
+#             register="C4S22184",
+#             department="BCA",
+#             year="3rd Year",
+#             room="18",
+#             phone="7708043539"
+#         ),
+#         Student(
+#             name="Arun Kumar",
+#             register="C4S22101",
+#             department="BCA",
+#             year="2nd Year",
+#             room="12",
+#             phone="9876543210"
+#         ),
+#         Student(
+#             name="Priya S",
+#             register="C4S22115",
+#             department="BSc CS",
+#             year="3rd Year",
+#             room="21",
+#             phone="9876501234"
+#         ),
+#         Student(
+#             name="Karthik R",
+#             register="C4S22120",
+#             department="BCA",
+#             year="1st Year",
+#             room="15",
+#             phone="9123456789"
+#         ),
+#         Student(
+#             name="Divya M",
+#             register="C4S22125",
+#             department="BCom",
+#             year="2nd Year",
+#             room="10",
+#             phone="9000001234"
+#         ),
+#         Student(
+#             name="Sanjay P",
+#             register="C4S22130",
+#             department="BCA",
+#             year="3rd Year",
+#             room="25",
+#             phone="9888888888"
+#         ),
+#     ]
 
-    db.add_all(students)
+#     db.add_all(students)
 
 
 if db.query(Room).count() == 0:
